@@ -9,6 +9,7 @@ build:
 deploy-container:
 	docker-compose run --rm web bash -l -c "sleep 10 && bower install --allow-root && rake db:setup && rake db:migrate && rake assets:precompile"
 	docker-compose up -d
+	docker-compose exec -T web bash -l -c "sleep 10 && rake db:setup && rake db:migrate && rake assets:precompile"
 
 redeploy-container:
 	docker-compose up --force-recreate -d
