@@ -1,12 +1,13 @@
 source "https://rubygems.org"
 
-ruby "2.4.4"
+ruby "2.4.6"
 gem "rails", "~>3.2"
 gem 'rake',  '~> 12.3.2'
 
 gem "will_paginate", "3.1.7"
 gem "will_paginate-bootstrap"
 gem "friendly_id"
+gem 'popper_js', '~> 1.11', '>= 1.11.1'
 
 # dependencies
 group :dependencies do
@@ -18,7 +19,8 @@ group :dependencies do
   gem "ruby-openid", "~>2.5"
   gem "open_id_authentication"
   gem "RubyInline"
-  gem "paperclip", "~>4.2.2"
+  gem "coveralls", require: false
+  gem "paperclip", "~>4.3.7"
 
   # if you use amazon s3 for warpable image storage
   gem 'aws-sdk', '~> 1.5.7'
@@ -42,6 +44,7 @@ group :test do
 end
 
 group :development do
+  gem "byebug"
   gem "jshintrb"
   gem "therubyracer"
 end
