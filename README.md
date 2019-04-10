@@ -13,7 +13,7 @@ Use Public Lab's open source MapKnitter to upload your own aerial photographs (f
 
 MapKnitter is broken into three major components:
 
-1. Map user interface
+1. Map user 
 2. Application
 3. Exporting system
 
