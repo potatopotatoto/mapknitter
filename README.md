@@ -5,7 +5,6 @@ Use Public Lab's open source MapKnitter to upload your own aerial photographs (f
 * web "slippy maps" like Google Maps
 * GeoTiff
 * TMS
-* high resolution JPEG
 
 ![demo](https://raw.githubusercontent.com/publiclab/mapknitter/master/public/demo.gif)
 
