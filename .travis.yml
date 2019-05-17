@@ -13,6 +13,8 @@ install:
 
 script:
   - docker-compose exec web bash -l -c "CI=true TRAVIS=true rake test:all"
+  - mkdir -p ./test/reports
+  - touch ./test/reports/TEST_.xml
   - bash <(curl -s https://codecov.io/bash)
 
 branches:
