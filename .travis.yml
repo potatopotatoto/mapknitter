@@ -17,7 +17,3 @@ script:
   - touch ./test/reports/TEST_.xml
   - bash <(curl -s https://codecov.io/bash)
 
-branches:
-  only:
-    - main
-    - unstable
